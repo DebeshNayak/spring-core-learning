@@ -12,7 +12,7 @@
 
 	<bean class="com.debesh.spring.springcore.propertiesplaceholder.MyDAO" name="myDAO">
 		<constructor-arg>
-			<value>${dbserver}</value>
+			<value>${dbServer}</value>
 		</constructor-arg>
 	</bean>
 
