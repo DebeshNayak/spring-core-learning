@@ -7,10 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean class="com.debesh.spring.springcore.innerbeans.Employee" name="employee" p:id="123" scope="prototype">
-		<property name="address">
-			<bean class="com.debesh.spring.springcore.innerbeans.Address" p:hno="700" p:street="Kuturachuan" p:city="Sambalpur" />
-		</property>
-	</bean>
-
+	<bean class="com.debesh.spring.springcore.dependencycheck.assignment.University" name="university" scope="prototype" p:id="10110" />
+<!--	<context:annotation-config />-->
+	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" />
 </beans>
